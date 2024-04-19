@@ -1,2 +1,2 @@
 <?php
-require loadView('login');
+require loadView('auth/login');
