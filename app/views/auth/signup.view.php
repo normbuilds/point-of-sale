@@ -12,12 +12,12 @@
         <div class="input-group mb-3">
   <span class="input-group-text">@</span>
   <div class="form-floating">
-    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+    <input name="username" type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
     <label for="floatingInputGroup1">Username</label>
   </div>
 </div>
         <div class="form-floating mb-3">
-  <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+  <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
   <label for="floatingInput">Email address</label>
 </div>
 <div class="form-floating">
@@ -25,7 +25,7 @@
   <label for="floatingPassword">Password</label>
 </div>
 <div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Re-enter Password">
+  <input name="password" type="password" class="form-control" id="floatingPassword" placeholder="Re-enter Password">
   <label for="floatingPassword">Re-enter Password</label>
 </div>
    <div style="display: flex; justify-content: space-between" class="btn-box">

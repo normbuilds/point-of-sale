@@ -19,8 +19,9 @@ else
 }
 
 function connectDB(){
-   $con = new PDO("mysql:".DBHOST.";dbname=".DBNAME,DBUSER,DBPASS);
+   $con = new PDO("mysql:".DBHOST.";dbname=pos_db".DBUSER,DBPASS);
  return $con;
+ 
 
 }
 
@@ -41,4 +42,26 @@ if($check)
 
 }
 
+}
+
+function allowed_columns($data, $table){
+    if ($table == 'users'){
+        $columns = [
+            'username',
+            'password',
+            'role',
+            'image',
+            'date'
+        ];
+        foreach($data as $key => $value){
+            if(!in_array($data, $columns)){
+                unset($data[$key]);
+            }else
+            {
+                echo 'error';
+            }
+           
+        }
+        return $data;
+    }
 }
