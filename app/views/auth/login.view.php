@@ -12,13 +12,13 @@
         <div class="input-group mb-3">
   <span class="input-group-text">@</span>
   <div class="form-floating">
-    <input type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
+    <input name="username" type="text" class="form-control" id="floatingInputGroup1" placeholder="Username">
     <label for="floatingInputGroup1">Username</label>
   </div>
 </div>
         
 <div class="form-floating">
-  <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+  <input name="password"  type="text" class="form-control" id="floatingPassword" placeholder="Password">
   <label for="floatingPassword">Password</label>
 </div>
 
